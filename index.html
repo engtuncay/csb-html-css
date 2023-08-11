@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Static Template</title>
+    <!-- <script type="module" src="tw.js"></script> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" type="text/css" href="./tw.css" />
+    <link rel="stylesheet" type="text/css" href="./index.css" />
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .content-auto {
+          content-visibility: auto;
+        }
+        .tw-a {
+          @apply underline text-blue-600 block;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <a href="flex1.html" class="tw-a">Flex 1</a>
+    <a href="flex2.html" class="tw-a">Flex 2</a>
+    <a href="flex3.html" class="tw-a">Flex 3 - Header Example - Multi Flex</a>
+    <a href="tailwind-sample-adv.html" class="tw-a">Tailwind Sample</a>
+    <a href="grid1.html" class="tw-a">Grid 1</a>
+    <a href="grid2.html" class="tw-a">Grid 2</a>
+  </body>
+</html>
